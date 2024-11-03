@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.container:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.output,
+.complexity-output {
+  margin-top: 20px;
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.steps-output {
+  max-height: 300px;
+  overflow-y: auto; /* Scroll if content exceeds the max height */
+  padding: 10px;
+}
+
+.steps-output li {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc; /* Garis bawah untuk memisahkan langkah */
+}
+.hasil-output h2 {
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.steps-output li:last-child {
+  border-bottom: none; /* Menghilangkan garis bawah pada item terakhir */
+}
+
+.steps-output li:hover {
+  background-color: #f8f9fa; /* Mengubah warna latar belakang saat hover */
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
